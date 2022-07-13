@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.mybtn{
+				background:#000000;
+				font-size: 16px;
+				color: #FFFFFF;
+				border: none;
+			}
+			
+			.header{
+				width: 100%;
+				height: 100vh;
+				background-image: url(img/IMG003.jpg);
+				background-size: cover;
+			}
+			
+			nav{
+				width: 100%;
+				padding: 20px 0;
+				text-align: center;
+			}
+			.logo{
+				width: 50px;
+				margin: 2px 0;
+				cursor: pointer;
+			}
+			nav ul{
+				background: #000;
+				width: 100%;
+				margin-top: 10px;
+			}
+			nav ul li{
+				display: inline-block;
+				list-style: none;
+				margin: 20px 30px;
+				color: #fff;
+			}
+			nav.sticky{
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 10px 8%;
+				background-color: #000000;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				transition: padding 0.7s;
+			}
+			nav.sticky ul{
+				width: auto;
+			}
+			body{
+				padding: 0px;
+				margin: 0px;
+			}
+			.text{
+				padding: 20px 8%;
+			}
+			.text01{
+				padding: 10px;
+				line-height: 50px;
+				font-size: 20px;
+				font-weight: 500;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<nav id="navbar">
+				<img src="./img/logowhite.png" class="logo">
+				<ul id="menu">
+					<li><a href="live.html"><button class="mybtn" type="button">生活</button></a></li>
+					<li><a href="jobs.html"><button class="mybtn" type="button">偶像</button></a></li>
+					<li><a href="words.html"><button class="mybtn" type="button">格言</button></a></li>
+					<li><a href="life.html"><button class="mybtn" type="button">人生</button></a></li>
+					<li><a href="index.html"><button class="mybtn" type="button">主页</button></a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		
+		<div style="
+		max-width: 800px;
+		margin: 30px auto;
+		padding: 15px;
+		line-height: 1.7;
+		background-color: #DCDCDC;
+		border-radius: 12px ;
+		">
+			<video width="760" controls loop="true" autoplay="true">
+						  <source src="./img/dream.mp4" type="video/mp4">
+						  <source src="./img/dream.ogg" type="video/ogg">
+						  <source src="./img/dream.webm" type="video/webm">
+						  <object data="./img/dream.mp4" width="800">
+						    <embed src="./img/dream.swf" width="800">
+						  </object> 
+						</video>
+			<audio src="./img/Stranger%20Things.mp3" loop="loop" autoplay="autoplay"></audio>
+			<p class="text01">人生就像一趟旅行，沿途会有美妙的风景，也会有些许坎坷挫折，这时的你要在自己心里点亮一盏明灯，指引自己前进的动力，哪怕只有一丝丝的光亮也好，都要勇往直前的走下去，不要停歇，更不要放弃，让自己客服困难，迎难而上。
+
+不管经历了多少困难与挫折，流淌了多少汗水与泪水，都不能忘记自己一直以来的初衷，有用心走好每一步路，脚踏实地的做好每一件事，勇敢的走下去。
+
+在这个世界上，没有谁天生比谁聪明，只有谁比谁更加努力。当你觉得自己的能力，才华不够时。就应该去努力，提升自己的能力，通过不断地学习，努力来强大自己，而不是去抱怨，没人会成为你的垃圾桶。
+
+所以，不要让懒惰来支配自己的时间，更不要沉迷于游戏，要不断进取，努力学习，当你客服一个又一个困难时，会有希望在前面向你招手。
+
+我们无论走了多远的路，跨过多少的砍，都要不忘初心，勇往直前，为自己的人生不断添彩。
+
+</p>
+		</div>
+		
+		
+		
+		<hr >
+		
+		<div
+		style="
+		background-color: #f1f1f1;
+		text-align: center;
+		padding: 40px;
+		font-size: 12px;
+		"
+		>
+		<p>版权所有：Daniel Yang</p>
+		<a href="index.html">我的网站</a>
+		</div>
+		
+		<script type="text/javascript">
+			var narbar = document.getElementById("navbar");
+			var menu = document.getElementById("menu");
+			
+			window.onscroll = function(){
+				if(window.pageYOffset >= menu.offsetTop){
+					navbar.classList.add("sticky");
+				}
+				else{
+					navbar.classList.remove("sticky");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

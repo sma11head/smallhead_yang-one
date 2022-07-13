@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/mycss.css" />
+    <title></title>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav id="navbar">
+        <img src="./img/logowhite.png" class="logo" />
+        <ul id="menu">
+          <li>
+            <a href="live.html"
+              ><button class="mybtn" type="button">生活</button></a
+            >
+          </li>
+          <li>
+            <a href="jobs.html"
+              ><button class="mybtn" type="button">偶像</button></a
+            >
+          </li>
+          <li>
+            <a href="words.html"
+              ><button class="mybtn" type="button">格言</button></a
+            >
+          </li>
+          <li>
+            <a href="life.html"
+              ><button class="mybtn" type="button">人生</button></a
+            >
+          </li>
+          <li>
+            <a href="index.html"
+              ><button class="mybtn" type="button">主页</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="max-width: 200px; margin: 30px auto">
+      <p>有事请联系，我的微信：</p>
+      <p>
+        <img src="img/2Vm.png" width="200px" height="200px" />
+      </p>
+    </div>
+
+    <hr />
+
+    <div
+      style="
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      "
+    >
+      <p>版权所有：Daniel Yang</p>
+      <a href="https://sma11head-4g9fjs3n1af1b6d6-1312214429.tcloudbaseapp.com/"
+        >我的网站</a
+      >
+    </div>
+
+    <script type="text/javascript">
+      var narbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+
+      window.onscroll = function () {
+        if (window.pageYOffset >= menu.offsetTop) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+    </script>
+  </body>
+</html>

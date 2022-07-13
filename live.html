@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.mybtn{
+				background:#000000;
+				font-size: 16px;
+				color: #FFFFFF;
+				border: none;
+			}
+			
+			.header{
+				width: 100%;
+				height: 100vh;
+				background-image: url(./img/IMG004.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			
+			nav{
+				width: 100%;
+				padding: 20px 0;
+				text-align: center;
+			}
+			.logo{
+				width: 50px;
+				margin: 2px 0;
+				cursor: pointer;
+			}
+			nav ul{
+				background: #000;
+				width: 100%;
+				margin-top: 10px;
+			}
+			nav ul li{
+				display: inline-block;
+				list-style: none;
+				margin: 20px 30px;
+				color: #fff;
+			}
+			nav.sticky{
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 10px 8%;
+				background-color: #000000;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				transition: padding 0.7s;
+			}
+			nav.sticky ul{
+				width: auto;
+			}
+			body{
+				padding: 0px;
+				margin: 0px;
+			}
+			.text{
+				padding: 20px 8%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<nav id="navbar">
+				<img src="./img/logowhite.png" class="logo">
+				<ul id="menu">
+					<li><a href="live.html"><button class="mybtn" type="button">生活</button></a></li>
+					<li><a href="jobs.html"><button class="mybtn" type="button">偶像</button></a></li>
+					<li><a href="words.html"><button class="mybtn" type="button">格言</button></a></li>
+					<li><a href="life.html"><button class="mybtn" type="button">人生</button></a></li>
+					<li><a href="index.html"><button class="mybtn" type="button">主页</button></a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		
+		<div
+		style="
+		max-width: 760px;
+		margin: 30px auto;
+		padding: 15px;
+		line-height: 1.7;
+		background-color: aliceblue;
+		border-radius: 12px ;
+		"
+		>
+			
+			
+			<video width="760" controls loop="true" autoplay="true">
+			  <source src="./img/cardistry.mp4" type="video/mp4">
+			  <source src="./img/cardistry.ogg" type="video/ogg">
+			  <source src="./img/cardistry.webm" type="video/webm">
+			  <object data="./img/cardistry.mp4" width="760">
+			    <embed src="./img/cardistry.swf" width="760">
+			  </object> 
+			</video>
+			
+			
+			
+			<p>我的QQ：3229192603</p>
+			<p>当然啦，你可以进我的QQ空间看看</p>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div
+		style="
+		background-color: #f1f1f1;
+		text-align: center;
+		padding: 40px;
+		font-size: 12px;
+		"
+		>
+		<p>版权所有：Daniel Yang</p>
+		<a href="https://sma11head-4g9fjs3n1af1b6d6-1312214429.tcloudbaseapp.com/">我的网站</a>
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript">
+			var narbar = document.getElementById("navbar");
+			var menu = document.getElementById("menu");
+			
+			window.onscroll = function(){
+				if(window.pageYOffset >= menu.offsetTop){
+					navbar.classList.add("sticky");
+				}
+				else{
+					navbar.classList.remove("sticky");
+				}
+			}
+	</body>
+</html>
